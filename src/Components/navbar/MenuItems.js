@@ -46,7 +46,7 @@ export default function MenuItems(props) {
         />
       )}
 
-      <div className="menu ease-in transition-all duration-300 bg-headerDark absolute top-[-900%] w-full left-0 py-8 rounded-b-md max-h-screen">
+      <div className="menu text-light ease-in transition-all duration-300 bg-headerDark absolute top-[-900%] w-full left-0 py-8 rounded-b-md max-h-screen">
         <ul className="items-center font-bebas text-2xl container mx-auto flex flex-col gap-6">
           {/* Sections */}
           <li>
@@ -55,7 +55,7 @@ export default function MenuItems(props) {
               to="/#about"
               className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
             >
-              About Me
+              About
             </HashLink>
           </li>
           <li>

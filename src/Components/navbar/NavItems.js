@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 export default function NavItems() {
   return (
-    <ul className="flex gap-7 xl:gap-12 items-center font-bebas text-2xl ">
+    <ul className="flex gap-7 xl:gap-12 items-center font-bebas text-2xl text-light">
       {/* Sections */}
       <li>
         <HashLink
@@ -12,7 +12,7 @@ export default function NavItems() {
           to="/#about"
           className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
         >
-          About Me
+          About
         </HashLink>
       </li>
       <li>

@@ -13,6 +13,8 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: rgb(43, 34, 115);
+    background: rgb(15, 23, 42);
+    background: radial-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.99)),
+      url(/src/assets/images/noise.svg);
   }
 }

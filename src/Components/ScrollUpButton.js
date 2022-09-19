@@ -36,7 +36,7 @@ export default function ScrollUpButton() {
       onClick={scrollUpHandler}
       className={
         isVisible
-          ? "fixed z-100 bottom-8 right-8 border-none shadow-[0_4px_6px_-1px_rgba(251,157,38,0.2)] rounded-lg text-2xl text-gold bg-headerDark px-4 py-3"
+          ? "ease transition-all duration-300 fixed z-100 bottom-8 right-8 hover:bottom-10 hover:text-darkGold border-none shadow-[0_4px_6px_-1px_rgba(251,157,38,0.2)] rounded-lg text-2xl text-gold bg-headerDark px-4 py-3"
           : "hidden"
       }
     >

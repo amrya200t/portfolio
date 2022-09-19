@@ -11,7 +11,27 @@
     /*** NOT WORKING ON Internet Explorer ***/
     /*** NOT WORKING ON SAFARI < 15.4, Added on 03/2022 ***/
     scroll-behavior: smooth;
+
+    /* Custom scrollbar for FireFox */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(251, 157, 38) rgb(15, 23, 42);
   }
+  /* Custom scrollbar for Major browsers */
+  html::-webkit-scrollbar {
+    width: 8px;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: rgb(251, 157, 38);
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(251, 107, 0);
+  }
+  html::-webkit-scrollbar-track {
+    background-color: rgb(15, 23, 42);
+  }
+
   body {
     background: rgb(15, 23, 42);
     background: radial-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.99)),

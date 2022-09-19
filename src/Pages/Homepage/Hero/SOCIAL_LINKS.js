@@ -1,4 +1,5 @@
-import { BsLinkedin, BsGithub, BsTwitter, BsFacebook } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 const SOCIAL_LINKS = [
   {
@@ -32,11 +33,21 @@ const SOCIAL_LINKS = [
     ),
   },
   {
-    name: "Facebook",
-    url: "https://www.facebook.com/amrezzatofficial/",
+    name: "Whatsapp",
+    url: "whatsapp://send?phone=+2001222978275",
     icon: (
-      <BsFacebook
+      <BsWhatsapp
         size="2rem"
+        className="ease-in transition-all duration-300 cursor-pointer hover:text-gold"
+      />
+    ),
+  },
+  {
+    name: "Email",
+    url: "mailto:amr@amrezzat.com",
+    icon: (
+      <MdEmail
+        size="2.4rem"
         className="ease-in transition-all duration-300 cursor-pointer hover:text-gold"
       />
     ),

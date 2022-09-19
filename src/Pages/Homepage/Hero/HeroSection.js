@@ -26,7 +26,7 @@ export default function HeroSection() {
           {/* Social Links */}
           <aside className="mt-8 text-gold">
             <h2>Find me on social media</h2>
-            <ul className="flex gap-4 text-light justify-center mt-4">
+            <ul className="flex gap-4 text-light justify-center items-center mt-4">
               {SOCIAL_LINKS.map((link) => (
                 <SocialLink
                   key={link.name}

@@ -25,6 +25,17 @@ export default function Header(props) {
   }, [init]);
 
   useEffect(() => {
+    const blog = document.querySelector('header nav ul li a[href="/blog"]');
+    if (blog.classList.contains("active")) {
+      blog.classList.add("border-gold");
+      blog.classList.remove("border-transparent");
+    } else {
+      blog.classList.remove("border-gold");
+      blog.classList.add("border-transparent");
+    }
+  }, [location.pathname]);
+
+  useEffect(() => {
     const headerHeight = document
       .querySelector("header")
       .getBoundingClientRect().height;
@@ -55,6 +66,11 @@ export default function Header(props) {
             link.classList.add("border-transparent");
           }
         });
+      } else {
+        navLinks.forEach((link, i) => {
+          link.classList.remove("border-gold");
+          link.classList.add("border-transparent");
+        });
       }
     };
 
@@ -62,7 +78,7 @@ export default function Header(props) {
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  });
+  }, [location.pathname]);
 
   const ScrollToTopHandler = () => {
     window.scrollTo(0, 0);
@@ -75,12 +91,12 @@ export default function Header(props) {
       if (window.scrollY > 64) {
         document
           .querySelector("header")
-          .classList.add("bg-headerDark", "text-dark", "shadow-md");
+          .classList.add("bg-darkColor", "shadow-md");
         setDarkNav(true);
       } else {
         document
           .querySelector("header")
-          .classList.remove("bg-headerDark", "text-dark", "shadow-md");
+          .classList.remove("bg-darkColor", "shadow-md");
         document.querySelector("header").classList.add("text-light");
         setDarkNav(false);
       }
@@ -106,7 +122,7 @@ export default function Header(props) {
       <HashLink
         smooth
         to="/#hero"
-        className="ease-in-out transition-all fixed top-0 right-0 left-0 text-center bg-headerDark p-4 -translate-y-full focus:translate-y-0"
+        className="ease-in-out transition-all fixed top-0 right-0 left-0 text-center bg-darkColor p-4 -translate-y-full focus:translate-y-0"
       >
         Skip to main content
       </HashLink>

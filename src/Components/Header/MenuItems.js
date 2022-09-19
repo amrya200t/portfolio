@@ -15,14 +15,14 @@ export default function MenuItems(props) {
     if (isOpen) {
       document
         .querySelector("header")
-        .classList.add("bg-headerDark", "text-dark", "shadow-md");
+        .classList.add("bg-darkColor", "shadow-md");
       document.querySelector(".menu").classList.remove("top-[-900%]");
       document.querySelector(".menu").classList.add("top-16");
     } else {
       if (!props.isDark && window.scrollY < 64) {
         document
           .querySelector("header")
-          .classList.remove("bg-headerDark", "text-dark", "shadow-md");
+          .classList.remove("bg-darkColor", "shadow-md");
       }
       document.querySelector("header").classList.add("text-light");
       document.querySelector(".menu").classList.add("top-[-900%]");
@@ -46,7 +46,7 @@ export default function MenuItems(props) {
         />
       )}
 
-      <div className="menu text-light ease-in transition-all duration-300 bg-headerDark absolute top-[-900%] w-full left-0 py-8 rounded-b-md max-h-screen">
+      <div className="menu text-light ease-in transition-all duration-300 bg-darkColor absolute top-[-900%] w-full left-0 py-8 rounded-b-md max-h-screen">
         <ul className="items-center font-bebas text-2xl container mx-auto flex flex-col gap-6">
           {/* Sections */}
           <li>

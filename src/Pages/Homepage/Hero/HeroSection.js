@@ -10,7 +10,10 @@ export default function HeroSection() {
   return (
     <>
       {/* Hero Section */}
-      <section className="z-0 bg-heroOriginal w-full h-screen bg-cover bg-center brightness-50"></section>
+      <section
+        className="z-0 bg-heroOriginal w-full h-screen bg-cover bg-center brightness-50"
+        id="hero"
+      ></section>
       <section>
         <article className="absolute top-1/2 left-1/2 text-light translate-x-[-50%] translate-y-[-50%] w-full text-center">
           <h1 className="font-poppins font-bold text-2xl md:text-4xl">

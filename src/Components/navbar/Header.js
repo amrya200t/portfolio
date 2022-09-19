@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import { FaLaptopCode } from "react-icons/fa";
 import MenuItems from "./MenuItems";
@@ -101,6 +102,16 @@ export default function Header(props) {
 
   return (
     <header className="z-10 w-full h-16 fixed left-2/4 translate-x-[-50%] ease-in transition-all duration-300 text-light">
+      {/* HIDDEN LINK */}
+      <HashLink
+        smooth
+        to="/#hero"
+        className="ease-in-out transition-all fixed top-0 right-0 left-0 text-center bg-headerDark p-4 -translate-y-full focus:translate-y-0"
+      >
+        Skip to main content
+      </HashLink>
+
+      {/* MAIN NAVIGATION BAR */}
       <nav className="container mx-auto flex justify-between items-center h-full">
         {/* LOGO */}
         <NavLink

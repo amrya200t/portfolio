@@ -9,9 +9,12 @@ export default function Homepage() {
     <main className="bg-noisyBG">
       {/* HERO SECTION */}
       <HeroSection />
+      {/* <div className="border-b border-gold"></div> */}
 
       {/* ABOUT SECTION */}
       <AboutSection />
+
+      {/* <div className="border-b border-gold"></div> */}
 
       {/* PROJECTS SECTION */}
       <ProjectsSection />

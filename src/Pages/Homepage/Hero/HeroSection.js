@@ -11,7 +11,7 @@ export default function HeroSection() {
     <>
       {/* Hero Section */}
       <section
-        className="z-0 bg-heroOriginal w-full h-screen bg-cover bg-center brightness-50"
+        className="z-0 bg-heroOriginal w-full h-screen bg-cover bg-center brightness-50  border-b border-gold"
         id="hero"
       ></section>
       <section>

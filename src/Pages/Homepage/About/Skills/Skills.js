@@ -5,7 +5,7 @@ import SKILLS_DATA from "./SKILLS_DATA";
 export default function Skills() {
   return (
     <section className="mt-12 px-4 sm:px-0">
-      <h3 className="text-3xl font-bebas text-gold mb-6">Skills</h3>
+      <h3 className="text-2xl font-bebas text-gold mb-6">Skills</h3>
       <article className="">
         <h4 className="text-light mb-8">
           Here is a list of some languages, tools, and technologies that I know.

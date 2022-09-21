@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         primaryColor: "rgb(15,23,42)",
         darkColor: "rgba(15,23,42, 0.95)",
+        transparentColor: "rgba(15,23,42, 0.55)",
         light: "rgb(226, 232, 240)",
         grey: "rgb(148, 163, 184)",
         lightGold: "rgb(255, 209, 153)",

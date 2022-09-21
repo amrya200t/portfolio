@@ -29,7 +29,7 @@ export default function AboutMe() {
   return (
     <section className="drop-shadow-[0_2px_1px_rgba(251,157,38,0.06)]">
       <article className="text-light py-12 px-6 bg-primaryColor rounded-xl">
-        <p className="mb-4 p-2 rounded-lg border">
+        <p className="mb-4 p-2 rounded-lg border border-lightGold">
           <span className="text-darkGold font-bold">&#36; &nbsp;</span>{" "}
           <span className="whoami" data-command="whoami"></span>
         </p>

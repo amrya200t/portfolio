@@ -67,7 +67,7 @@ export default function MenuItems(props) {
               Projects
             </HashLink>
           </li>
-          <li>
+          {/* <li>
             <HashLink
               smooth
               to="/#social"
@@ -75,7 +75,7 @@ export default function MenuItems(props) {
             >
               Social
             </HashLink>
-          </li>
+          </li> */}
           {/* BLOG PAGE */}
           <li>
             <NavLink

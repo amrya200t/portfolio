@@ -1,8 +1,9 @@
-import SOCIAL_LINKS from "./SOCIAL_LINKS";
+// import SOCIAL_LINKS from "../../../Components/Social/SOCIAL_LINKS";
+// import SocialLink from "./SocialLink";
+import Socials from "../../../Components/Social/Socials";
 
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-import SocialLink from "./SocialLink";
 
 import { FaAngleDown } from "react-icons/fa";
 
@@ -11,7 +12,7 @@ export default function HeroSection() {
     <>
       {/* Hero Section */}
       <section
-        className="z-0 bg-heroOriginal w-full h-screen bg-cover bg-center brightness-50  border-b border-gold"
+        className="z-0 bg-heroOriginal w-full bg-cover bg-center brightness-50  border-b border-gold h-screen"
         id="hero"
       ></section>
       <section>
@@ -24,19 +25,7 @@ export default function HeroSection() {
           </h2>
 
           {/* Social Links */}
-          <aside className="mt-8 text-gold">
-            <h2>Find me on social media</h2>
-            <ul className="flex gap-4 text-light justify-center items-center mt-4">
-              {SOCIAL_LINKS.map((link) => (
-                <SocialLink
-                  key={link.name}
-                  title={link.name}
-                  url={link.url}
-                  icon={link.icon}
-                />
-              ))}
-            </ul>
-          </aside>
+          <Socials />
         </article>
         <HashLink
           smooth

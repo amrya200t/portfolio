@@ -19,7 +19,7 @@ export default function ProjectInfo(props) {
       {/* CATEGORIES TAGS & DATE*/}
       <div className="flex justify-between items-center mt-4 px-2 text-sm text-light font-bebas ">
         <Tag tags={props.tags} />
-        <span className="px-3 py-1">{props.date}</span>
+        <span className="px-3 py-1 text-grey">{props.date}</span>
       </div>
     </div>
   );

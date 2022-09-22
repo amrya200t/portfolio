@@ -41,12 +41,12 @@ export default function Header(props) {
       .getBoundingClientRect().height;
     const navLinks = [...document.querySelectorAll("header nav ul li a")].slice(
       0,
-      3
+      2
     );
     const sections = [
       document.getElementById("about"),
       document.getElementById("projects"),
-      document.getElementById("social"),
+      // document.getElementById("social"),
     ];
 
     const scrollHandler = () => {

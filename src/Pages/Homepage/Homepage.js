@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./Hero/HeroSection";
 import AboutSection from "./About/AboutSection";
 import ProjectsSection from "./Projects/ProjectsSection";
+import HireMeSection from "./HireMe/HireMeSection";
 
 export default function Homepage() {
   return (
@@ -18,6 +19,9 @@ export default function Homepage() {
 
       {/* PROJECTS SECTION */}
       <ProjectsSection />
+
+      {/* Hire ME SECTION */}
+      <HireMeSection />
     </main>
   );
 }

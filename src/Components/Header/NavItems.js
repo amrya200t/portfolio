@@ -24,7 +24,7 @@ export default function NavItems() {
           Projects
         </HashLink>
       </li>
-      <li>
+      {/* <li>
         <HashLink
           smooth
           to="/#social"
@@ -32,7 +32,7 @@ export default function NavItems() {
         >
           Social
         </HashLink>
-      </li>
+      </li> */}
       {/* BLOG PAGE */}
       <li>
         <NavLink

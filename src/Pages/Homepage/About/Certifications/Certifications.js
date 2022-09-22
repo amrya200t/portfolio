@@ -15,7 +15,7 @@ export default function Certifications() {
           href="https://www.linkedin.com/in/amrezzatofficial/details/certifications/"
           target="_blank"
           rel="noreferrer"
-          className="text-gold border-b border-b-transparent pb-1 hover:border-b-darkGold"
+          className="text-gold border-b border-b-transparent pb-1 hover:border-b-darkGold active:border-b-darkGold"
         >
           LinkedIn
         </a>{" "}

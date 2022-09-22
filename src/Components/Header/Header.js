@@ -6,7 +6,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import MenuItems from "./MenuItems";
 import NavItems from "./NavItems";
 
-export default function Header(props) {
+export default function Header() {
   const location = useLocation();
   const [mobileVersion, setMobileVersion] = useState(false);
   const [initial, setInitial] = useState(false);
@@ -27,10 +27,10 @@ export default function Header(props) {
   useEffect(() => {
     const blog = document.querySelector('header nav ul li a[href="/blog"]');
     if (blog.classList.contains("active")) {
-      blog.classList.add("border-gold");
+      blog.classList.add("border-gold", "text-gold");
       blog.classList.remove("border-transparent");
     } else {
-      blog.classList.remove("border-gold");
+      blog.classList.remove("border-gold", "text-gold");
       blog.classList.add("border-transparent");
     }
   }, [location.pathname]);
@@ -46,7 +46,6 @@ export default function Header(props) {
     const sections = [
       document.getElementById("about"),
       document.getElementById("projects"),
-      // document.getElementById("social"),
     ];
 
     const scrollHandler = () => {
@@ -58,11 +57,11 @@ export default function Header(props) {
               sections[i].offsetTop + sections[i].offsetHeight - headerHeight
           ) {
             if (link.classList.contains("border-gold")) return;
-            link.classList.add("border-gold");
+            link.classList.add("border-gold", "text-gold");
             link.classList.remove("border-transparent");
             console.log(link);
           } else {
-            link.classList.remove("border-gold");
+            link.classList.remove("border-gold", "text-gold");
             link.classList.add("border-transparent");
           }
         });

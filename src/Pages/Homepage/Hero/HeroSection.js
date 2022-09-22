@@ -12,7 +12,7 @@ export default function HeroSection() {
     <>
       {/* Hero Section */}
       <section
-        className="z-0 bg-heroOriginal w-full bg-cover bg-center brightness-50  border-b border-gold h-screen"
+        className="z-0 bg-hero w-full bg-cover bg-center brightness-50  border-b border-gold h-screen"
         id="hero"
       ></section>
       <section>
@@ -21,12 +21,22 @@ export default function HeroSection() {
             Hello I'm Amr Ezzat Ahmed
           </h1>
           <h2 className="font-poppins font-bold text-lg md:text-xl pt-4">
-            I'm a passionate Web Developer
+            A passionate full stack Developer
           </h2>
+
+          <HashLink
+            to="/#contact"
+            className="ease-in transition-all inline-block text-lg md:text-xl mt-4 py-4 px-4 border rounded 
+            text-gold border-lightGold hover:text-darkGold hover:border-gold active:text-darkGold active:border-gold"
+          >
+            Need a web Developer?
+          </HashLink>
 
           {/* Social Links */}
           <Socials />
         </article>
+
+        {/* Move to First section */}
         <HashLink
           smooth
           to="/#about"
@@ -34,7 +44,7 @@ export default function HeroSection() {
         >
           <FaAngleDown
             size="3rem"
-            className="ease-in transition-all duration-300  text-gold hover:text-darkGold"
+            className="ease-in transition-all duration-300  text-gold hover:text-darkGold active:text-darkGold"
             aria-label="Go to First Section"
           />
         </HashLink>

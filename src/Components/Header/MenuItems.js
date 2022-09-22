@@ -53,7 +53,7 @@ export default function MenuItems(props) {
             <HashLink
               smooth
               to="/#about"
-              className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
+              className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent active:border-gold hover:border-gold active:text-gold hover:text-gold"
             >
               About
             </HashLink>
@@ -62,25 +62,17 @@ export default function MenuItems(props) {
             <HashLink
               smooth
               to="/#projects"
-              className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
+              className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent active:border-gold hover:border-gold active:text-gold hover:text-gold"
             >
               Projects
             </HashLink>
           </li>
-          {/* <li>
-            <HashLink
-              smooth
-              to="/#social"
-              className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
-            >
-              Social
-            </HashLink>
-          </li> */}
+
           {/* BLOG PAGE */}
           <li>
             <NavLink
               to="/blog"
-              className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
+              className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent active:border-gold hover:border-gold active:text-gold hover:text-gold"
             >
               Blog
             </NavLink>
@@ -90,7 +82,7 @@ export default function MenuItems(props) {
             <HashLink
               smooth
               to="/#contact"
-              className="ease-in transition-all duration-300 px-4 py-2 h-full border rounded-md border-gold text-gold hover:text-darkGold "
+              className="ease-in transition-all duration-300 px-4 py-2 h-full border rounded-md border-gold text-gold active:text-darkGold hover:text-darkGold "
             >
               Hire me
             </HashLink>

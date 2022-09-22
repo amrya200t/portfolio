@@ -10,7 +10,7 @@ export default function NavItems() {
         <HashLink
           smooth
           to="/#about"
-          className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
+          className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold active:border-gold hover:text-gold active:text-gold"
         >
           About
         </HashLink>
@@ -19,25 +19,17 @@ export default function NavItems() {
         <HashLink
           smooth
           to="/#projects"
-          className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
+          className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent  hover:border-gold active:border-gold hover:text-gold active:text-gold"
         >
           Projects
         </HashLink>
       </li>
-      {/* <li>
-        <HashLink
-          smooth
-          to="/#social"
-          className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
-        >
-          Social
-        </HashLink>
-      </li> */}
+
       {/* BLOG PAGE */}
       <li>
         <NavLink
           to="/blog"
-          className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent hover:border-gold"
+          className="ease-in transition-all duration-300 px-4 py-2 h-full border-b border-transparent  hover:border-gold active:border-gold hover:text-gold active:text-gold"
         >
           Blog
         </NavLink>
@@ -47,7 +39,7 @@ export default function NavItems() {
         <HashLink
           smooth
           to="/#contact"
-          className="ease-in transition-all duration-300 px-4 py-2 h-full border rounded-md border-gold text-gold hover:text-darkGold"
+          className="ease-in transition-all duration-300 px-4 py-2 h-full border rounded-md border-gold text-gold hover:text-darkGold active:text-darkGold"
         >
           Hire me
         </HashLink>

@@ -1,8 +1,8 @@
 import React from "react";
-import Contacts from "./Contacts";
+import Contacts from "./Contacts/Contacts";
 import Socials from "../../../Components/Social/Socials";
 
-import Form from "./Form";
+import Form from "./Form/Form";
 
 export default function HireMeSection() {
   return (

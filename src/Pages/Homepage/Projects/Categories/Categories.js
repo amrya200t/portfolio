@@ -2,9 +2,6 @@ import React from "react";
 import Category from "./Category";
 import CATEGORIES_DATA from "./CATEGORIES_DATA";
 
-/* 
-border border-lightGold hover:border-darkGold hover:text-gold focus:outline-none focus:border-gold focus:text-gold
-*/
 export default function Categories(props) {
   const currentCategoryHandler = (e) => {
     const curCategory = e.target.textContent.trim().toLowerCase();

@@ -6,8 +6,7 @@ module.exports = {
       backgroundImage: {
         heroOriginal:
           "linear-gradient(to right bottom, rgba(15,23,42, 0.55), rgba(23,51,79, 0.55)), url('/src/assets/images/minimalist_workspace original.jpg')",
-        headerBG:
-          "linear-gradient(to right bottom, rgba(15,23,42, 0.95), rgba(15,23,42, 0.95)), url(https://grainy-gradients.vercel.app/noise.svg)",
+        hero: "linear-gradient(to right bottom, rgba(15,23,42, 0.55), rgba(23,51,79, 0.55)), url('/src/assets/images/minimalist_workspace.jpg')",
         noisyBG:
           "radial-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.99)), url(/src/assets/images/noise.svg)",
       },

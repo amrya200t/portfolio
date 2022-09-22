@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { BiMessageDetail } from "react-icons/bi";
 import Input from "./Input";
 
+console.log(process.env.SENDGRID_API_KEY);
+console.log(__dirname);
+
 export default function Form() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const nameRef = useRef();
@@ -11,18 +14,27 @@ export default function Form() {
 
   const sendMessageHandler = (e) => {
     e.preventDefault();
-    const name = nameRef.current.value;
-    const email = emailRef.current.value;
-    const title = titleRef.current.value;
-    const message = messageRef.current.value;
+    const formData = {};
+    // const name = nameRef.current.value;
+    // const email = emailRef.current.value;
+    // const title = titleRef.current.value;
+    // const message = messageRef.current.value;
 
-    console.log(name, email, title, message);
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+      field.value = "";
+    });
+    console.log(formData);
+    // console.log(e.currentTarget.elements);
+    // console.log(name, email, title, message);
 
     setFormSubmitted(true);
   };
 
   return (
     <form
+      method="POST"
       className="p-4 drop-shadow-none grid grid-cols-2 gap-4"
       onSubmit={sendMessageHandler}
     >
@@ -73,7 +85,7 @@ export default function Form() {
 
       <button
         type="submit"
-        className="ease-in transition-all border px-4 py-2 text-gold border-gold bg-transparent hover:bg-darkGold hover:text-light rounded-md max-w-max h-fit "
+        className="ease-in transition-all border px-4 py-2 text-gold border-gold bg-transparent hover:bg-darkGold hover:text-light active:bg-darkGold active:text-light rounded-md max-w-max h-fit "
       >
         Send Message
       </button>

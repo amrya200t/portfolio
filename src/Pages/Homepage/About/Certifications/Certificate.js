@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Certificate(props) {
   return (
-    <tr className="border-b hover:text-lightGold">
+    <tr className="border-b hover:text-lightGold active:text-lightGold">
       <td className="py-4 inline-block w-full ">
         <a
           href={props.url}

@@ -18,7 +18,7 @@ export default function Contacts() {
       <address className="flex flex-col gap-4 text-grey">
         <p className="flex gap-2 items-center">
           <FaMapMarkedAlt size="1.5rem" className="text-lightGold" />
-          El-Mahalla El-Kubra , Gharbia, Egypt
+          Egypt
         </p>
         <p className="flex gap-2 items-center">
           <MdEmail size="1.5rem" className="text-lightGold" />

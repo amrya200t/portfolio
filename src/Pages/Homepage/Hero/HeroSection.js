@@ -21,7 +21,7 @@ export default function HeroSection() {
             Hello I'm Amr Ezzat Ahmed
           </h1>
           <h2 className="font-poppins font-bold text-lg md:text-xl pt-4">
-            A passionate full stack Developer
+            A passionate Front End Web Developer
           </h2>
 
           <HashLink

@@ -15,7 +15,6 @@ import {
   SiTailwindcss,
   SiRedux,
   SiMongodb,
-  SiTypescript,
   SiGraphql,
 } from "react-icons/si";
 
@@ -51,10 +50,6 @@ const SKILLS_DATA = [
   {
     name: "NodeJs",
     icon: <FaNodeJs size="3rem" />,
-  },
-  {
-    name: "Typescript",
-    icon: <SiTypescript size="3rem" />,
   },
   {
     name: "Mongodb",

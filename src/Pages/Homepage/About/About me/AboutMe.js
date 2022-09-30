@@ -57,7 +57,7 @@ export default function AboutMe() {
           <span className="text-darkGold font-bold">&gt; &nbsp;</span>
           <span className="text-justify xl:text-left">
             Hello! I'm Amr Ezzat, a{" "}
-            <span className="text-darkGold font-bold">MERN</span> stack
+            <span className="text-darkGold font-bold">Front-end</span> web
             developer. I'm a Computer Science Student at the {""}
             <a
               href="https://www.london.ac.uk/"

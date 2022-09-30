@@ -1,10 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import Link from "./Link";
 import ProjectInfo from "./ProjectInfo";
 
 export default function Project(props) {
   return (
-    <article
+    <motion.article
+      // layout
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.1 } }}
+      exit={{ opacity: 0 }}
       tabIndex="0"
       className="group ease-in transition-all duration-300 drop-shadow-[0_4px_2px_rgba(251,157,38,0.10)] hover:drop-shadow-[0_4px_5px_rgba(251,157,38,0.06)] active:drop-shadow-[0_4px_5px_rgba(251,157,38,0.06)] rounded-lg overflow-hidden bg-darkColor pb-4 hover:scale-105 active:scale-105 border border-lightGold hov flex flex-col justify-between"
     >
@@ -27,6 +33,6 @@ export default function Project(props) {
         tags={props.tags}
         date={props.date}
       />
-    </article>
+    </motion.article>
   );
 }

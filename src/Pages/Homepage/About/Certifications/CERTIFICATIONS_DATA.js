@@ -1,4 +1,5 @@
 import { SiUdemy, SiLinkedin } from "react-icons/si";
+import { BsCloudyFill } from "react-icons/bs";
 
 const CERTIFICATIONS_DATA = [
   {
@@ -24,6 +25,18 @@ const CERTIFICATIONS_DATA = [
     date: "Sep. 2022",
     url: "https://ude.my/UC-49801076-5867-4307-9f32-962ef92f9385",
     icon: <SiUdemy size="1rem" />,
+  },
+  {
+    name: "AWS Certified Solutions Architect - Associate (SAA-C02)",
+    date: "Sep. 2022",
+    url: "https://verify.acloud.guru/4DA1B2F30DFF",
+    icon: <BsCloudyFill size="1rem" />,
+  },
+  {
+    name: "AWS Certified Cloud Practitioner (CLF-C01)",
+    date: "Sep. 2022",
+    url: "https://verify.acloud.guru/7EF8CD8BCA81",
+    icon: <BsCloudyFill size="1rem" />,
   },
   {
     name: "Learning GitHub",

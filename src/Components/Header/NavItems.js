@@ -39,7 +39,7 @@ export default function NavItems() {
         <HashLink
           smooth
           to="/#contact"
-          className="ease-in transition-all duration-300 px-4 py-2 h-full border rounded-md border-gold text-gold hover:text-darkGold active:text-darkGold"
+          className="ease-in transition-all duration-300 px-4 py-2 h-full border rounded-md border-gold text-gold hover:bg-darkGold hover:text-light active:bg-darkGold active:text-light"
         >
           Hire me
         </HashLink>

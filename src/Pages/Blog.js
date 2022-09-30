@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Blog() {
   const location = useLocation();
@@ -14,8 +15,13 @@ export default function Blog() {
 
   return (
     // <div className="text-center font-bold text-3xl text-light fixed top-1/2 -translate-y-1/2 left-0 right-0 ">
-    <div className="blog-page text-center font-bold text-3xl text-light flex items-center justify-center">
+    <motion.div
+      className="blog-page text-center font-bold text-3xl text-light flex items-center justify-center"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <h3>Coming Soon...</h3>
-    </div>
+    </motion.div>
   );
 }

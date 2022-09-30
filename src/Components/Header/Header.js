@@ -136,8 +136,6 @@ export default function Header() {
           onClick={ScrollToTopHandler}
         >
           <FaLaptopCode size="3rem" />
-          {/* <FaCode size="2rem" /> */}
-          {/* <span className="font-medium pt-1">Home</span> */}
         </NavLink>
 
         {/* Navigation bar */}

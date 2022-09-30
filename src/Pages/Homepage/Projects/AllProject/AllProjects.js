@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+// import { LayoutGroup } from "framer-motion";
+// import { Reorder } from "framer-motion";
+
 import Project from "./project/Project";
 import PROJECTS_DATA from "./PROJECTS_DATA";
 
@@ -17,7 +21,10 @@ export default function AllProjects(props) {
   }, [props.curCategory]);
 
   return (
-    <section className="ease-in transition-all duration-300 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-center justify-items-center text-light p-4 lg:p-0">
+    <motion.section
+      className="ease-in transition-all duration-300 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-center justify-items-center text-light p-4 lg:p-0"
+      // layout
+    >
       {selectedCategory.map((project, i) => (
         <Project
           key={`${i}-${project.name}`}
@@ -32,6 +39,6 @@ export default function AllProjects(props) {
           technologies={project.technologies}
         />
       ))}
-    </section>
+    </motion.section>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { BiMessageDetail } from "react-icons/bi";
+import { BiMessageDetail, BiSend } from "react-icons/bi";
 import { FaCheckCircle } from "react-icons/fa";
 import { ImSpinner2 } from "react-icons/im";
 import emailjs from "@emailjs/browser";
@@ -92,6 +92,7 @@ export default function Form() {
           id="message"
           name="message"
           rows="5"
+          placeholder="Type you Message here..."
           className="rounded-md w-full p-3 bg-light text-darkColor font-poppins resize-none"
         />
       </div>
@@ -103,6 +104,7 @@ export default function Form() {
       >
         {isSending && !formSubmitted && <ImSpinner2 className="animate-spin" />}
         {!isSending && formSubmitted && <FaCheckCircle />}
+        {!isSending && !formSubmitted && <BiSend />}
         Send Message
       </button>
     </form>
